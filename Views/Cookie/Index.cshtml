@@ -1,5 +1,5 @@
 ﻿@model string
-@if(!string.IsNullOrWhiteSpace(Model))
+@if (!string.IsNullOrWhiteSpace(Model))
 {
     <h2>Welcome Back, @Model!</h2>
     <a asp-action="DeleteCookies">Delete Cookies</a>
@@ -11,7 +11,7 @@ else
         <label for="userName">Please enter your name:</label>
         <input type="text" id="userName" name="userName" required />
         <div class="form-group">
-            <input type="submit" value="Update"/>
+            <input type="submit" value="Update" />
         </div>
     </form>
 }

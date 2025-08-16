@@ -4,7 +4,7 @@ namespace WebApplication1.Models
 {
     public class StudentDetails
     {
-        public int Id { get; set; }
+        public int UserID { get; set; }
 
         [Required(ErrorMessage = "Name is required")]
         public string Name { get; set; }
