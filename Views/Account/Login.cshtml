@@ -1,0 +1,24 @@
+﻿@model WebApplication1.Models.UserDetails
+<form asp-action="Login">
+    <fieldset>
+        <legend>Login</legend>
+        <table>
+            <tr>
+                <td>Username:</td>
+                <td><input type="text" asp-for="UserName"/></td>
+                <td><span asp-validation-for="UserName" class="text-danger"></span></td>
+            </tr>
+            <tr>
+                <td>Password:</td>
+                <td><input type="text" asp-for="Password" /></td>
+                <td><span asp-validation-for="Password" class="text-danger"></span></td>
+            </tr>
+            <tr>
+                <td colspan="3">
+                    <input type="submit" value="Login" />
+                </td>
+            </tr>
+        </table>
+    </fieldset>
+    <h2>@TempData["msg"]</h2>
+</form>
